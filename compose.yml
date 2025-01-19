@@ -1,0 +1,14 @@
+services:
+  kasa-exporter:
+    image: kasa_power_prometheus_python_exporter:latest
+    container_name: kasa-exporter
+    ports:
+      - 10240:10240
+    environment:
+      IP_ADDRESS: ${IP_ADDRESS}
+      USERNAME: ${USERNAME}
+      PASSWORD: ${PASSWORD}
+      GAUGE_NAME: ${GAUGE_NAME}
+      GAUGE_DESC: ${GAUGE_DESC}
+      INTERVAL: 5     # optional
+    restart: unless-stopped
