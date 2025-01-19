@@ -1,9 +1,9 @@
-FROM python:3.14.0a4-bookworm
+FROM python:3.11.11-bookworm
 WORKDIR /usr/local/app
 
 COPY requirements.txt ./
 COPY exporter.py ./
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip3 install --no-cache-dir -r requirements.txt
 
 EXPOSE 10240
 

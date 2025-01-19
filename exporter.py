@@ -1,4 +1,4 @@
-import asyncio, time, random, os
+import asyncio, time, os
 
 from prometheus_client import start_http_server, Summary
 from kasa import Discover, Module
