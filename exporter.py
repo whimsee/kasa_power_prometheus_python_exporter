@@ -30,8 +30,8 @@ async def main():
           energy1 = dev1.modules["Energy"]
           energy2 = dev2.modules["Energy"]
           
-          s1.set(energy.current_consumption)
-          s2.set(energy.current_consumption)
+          s1.set(energy1.current_consumption)
+          s2.set(energy2.current_consumption)
           
           time.sleep(INTERVAL)
     except KeyError:
