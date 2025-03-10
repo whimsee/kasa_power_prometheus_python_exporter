@@ -1,5 +1,7 @@
 # kasa_power_prometheus_exporter
 
+Crude setup but I only need to keep track of 2 devices
+
 For use with Kasa Smart Wi-Fi Plug Model KP125M
 
 Meant to be built and deployed as container.
