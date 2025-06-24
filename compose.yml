@@ -5,10 +5,16 @@ services:
     ports:
       - 10240:10240
     environment:
-      IP_ADDRESS: ${IP_ADDRESS}
+      IP_ADDRESS1: ${IP_ADDRESS1}
+      IP_ADDRESS2: ${IP_ADDRESS2}
+      IP_ADDRESS3: ${IP_ADDRESS3}
       USERNAME: ${USERNAME}
       PASSWORD: ${PASSWORD}
-      GAUGE_NAME: ${GAUGE_NAME}
-      GAUGE_DESC: ${GAUGE_DESC}
-      INTERVAL: 5     # optional
+      GAUGE_NAME1: ${GAUGE_NAME1}
+      GAUGE_DESC1: ${GAUGE_DESC1}
+      GAUGE_NAME2: ${GAUGE_NAME2}
+      GAUGE_DESC2: ${GAUGE_DESC2}
+      GAUGE_NAME3: ${GAUGE_NAME3}
+      GAUGE_DESC3: ${GAUGE_DESC3}
+#       INTERVAL: 5
     restart: unless-stopped
