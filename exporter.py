@@ -14,7 +14,7 @@ else:
 
 s1 = Gauge(env_var['GAUGE_NAME1'], env_var['GAUGE_DESC1'])
 s2 = Gauge(env_var['GAUGE_NAME2'], env_var['GAUGE_DESC2'])
-s3 = Gauge(env_var['GAUGE_NAME2'], env_var['GAUGE_DESC2'])
+s3 = Gauge(env_var['GAUGE_NAME3'], env_var['GAUGE_DESC3'])
 
 # Initial set
 s1.set(0)
@@ -25,7 +25,7 @@ async def main():
     try:
       dev1 = await Discover.discover_single(env_var['IP_ADDRESS1'], username=env_var['USERNAME'], password=env_var['PASSWORD'])
       dev2 = await Discover.discover_single(env_var['IP_ADDRESS2'], username=env_var['USERNAME'], password=env_var['PASSWORD'])
-      dev3 = await Discover.discover_single(env_var['IP_ADDRESS2'], username=env_var['USERNAME'], password=env_var['PASSWORD'])
+      dev3 = await Discover.discover_single(env_var['IP_ADDRESS3'], username=env_var['USERNAME'], password=env_var['PASSWORD'])
       while True:
           await dev1.update()
           await dev2.update()
