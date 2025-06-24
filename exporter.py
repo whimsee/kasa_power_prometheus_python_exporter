@@ -37,7 +37,7 @@ async def main():
           
           s1.set(energy1.current_consumption)
           s2.set(energy2.current_consumption)
-          s3.set(energy2.current_consumption)
+          s3.set(energy3.current_consumption)
           
           time.sleep(INTERVAL)
     except KeyError:
